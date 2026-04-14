@@ -1,0 +1,29 @@
+skill_name,category,domain,importance
+python,programming,software,High
+java,programming,software,High
+c++,programming,software,Medium
+sql,database,software,High
+mysql,database,software,Medium
+postgresql,database,software,Medium
+database,concept,software,High
+backend,concept,software,High
+frontend,concept,software,Medium
+api,concept,software,High
+rest,concept,software,Medium
+microservices,architecture,software,Medium
+aws,cloud,cloud,High
+azure,cloud,cloud,Medium
+docker,devops,cloud,High
+kubernetes,devops,cloud,Medium
+machine learning,ai,ai,High
+deep learning,ai,ai,Medium
+nlp,ai,ai,Medium
+data science,analytics,ai,High
+excel,tools,analytics,Medium
+power bi,tools,analytics,Medium
+tableau,tools,analytics,Medium
+statistics,math,ai,High
+data structures,cs fundamentals,software,High
+algorithms,cs fundamentals,software,High
+git,tools,software,Medium
+linux,tools,software,Medium
