@@ -3,5 +3,5 @@ flask-cors
 pandas
 requests
 PyPDF2
-scikit-learn
-numpy
+gunicorn
+rapidfuzz
