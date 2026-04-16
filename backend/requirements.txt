@@ -5,3 +5,4 @@ requests
 PyPDF2
 gunicorn
 rapidfuzz
+sentence-transformers
