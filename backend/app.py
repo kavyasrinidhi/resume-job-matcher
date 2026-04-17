@@ -1,16 +1,21 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
 from flask import Flask, request, jsonify
 import PyPDF2
 import io
 import requests
 from flask_cors import CORS
 import pandas as pd
-import os
+
 
 # Your modules
-from src.analytics_core import extract_skills
-from src.intelligence_layer import apply_intelligence
-from src.ai_enhancement import compute_ai_similarity
-from src.final_scoring import compute_final_score
+from analytics_core import extract_skills
+from intelligence_layer import apply_intelligence
+from ai_enhancement import compute_ai_similarity
+from final_scoring import compute_final_score
 
 app = Flask(__name__)
 CORS(app)
@@ -238,5 +243,6 @@ def get_jobs():
 # RUN SERVER
 # ----------------------------------------
 if __name__ == '__main__':
+    print("✅ All imports successful")
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
