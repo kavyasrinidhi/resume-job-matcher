@@ -132,11 +132,6 @@ function App() {
   setAnalyzeLoading(false);
 };
 
-  // 📊 Chart Data
-  const chartData = result
-    ? [{ name: "Score", value: result.final_score }]
-    : [];
-
   // 🔎 FETCH JOBS
   const fetchJobs = async () => {
   if (!result) return;
