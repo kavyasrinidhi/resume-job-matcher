@@ -384,9 +384,11 @@ textarea:focus {
 /* ==== INFO SECTION ====*/
 .info-icon {
   position: relative;
-  margin-left: 8px;
+  margin-left: 6px;
   cursor: pointer;
   font-size: 14px;
+  display: flex;
+  align-items: center;  
 }
 
 .tooltip {
@@ -413,6 +415,24 @@ textarea:focus {
   opacity: 1;
 }
 
+.heading-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.heading-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-align: center;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: gray;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
   from {
@@ -435,3 +455,4 @@ textarea:focus {
     transform: translate(-50%, 0);
   }
 }
+
