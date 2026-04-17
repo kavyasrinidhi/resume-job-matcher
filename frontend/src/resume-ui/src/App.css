@@ -84,7 +84,7 @@ body {
   padding: 30px;
   border-radius: 20px;
   width: 420px;
-
+  align-items: center;
   border: 1px solid rgba(255,255,255,0.3);
   backdrop-filter: blur(12px);
 
@@ -418,14 +418,16 @@ textarea:focus {
 .heading-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 10px;
 }
 
 .heading-title {
+
   font-size: 18px;
   font-weight: 600;
-  font-align: center;
+  align-items: center;
 }
 
 .sub-text {
