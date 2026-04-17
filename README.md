@@ -102,7 +102,3 @@ REACT_APP_API_URL=https://resume-job-matcher-rajx.onrender.com
 ---
 ## 🏷️ Summary:
 A full-stack AI Resume Analyzer that evaluates resumes against job descriptions, provides actionable insights, and recommends jobs using intelligent scoring and text similarity techniques.
-
----
-## 💼 Resume Highlight:
-Developed and deployed a full-stack AI Resume Analyzer using React and Flask, enabling real-time resume evaluation, skill gap analysis, and job recommendations with optimized cloud deployment.
