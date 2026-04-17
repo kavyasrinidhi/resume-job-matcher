@@ -120,7 +120,7 @@ function App() {
   setJobs([]);
 
   try {
-    const res = await axios.post("http://127.0.0.1:5000/analyze", formData);
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/analyze`, formData);
     setResult(res.data);
     setSkillData(res.data.skill_analysis || []);
     setMessage("✅ Analysis completed successfully!");
@@ -144,7 +144,7 @@ function App() {
   setJobLoading(true); // 🔥 START loading
 
   try {
-    const res = await axios.post("http://127.0.0.1:5000/jobs", {
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/jobs`, {
       skills: result.matched_skills
     });
 
