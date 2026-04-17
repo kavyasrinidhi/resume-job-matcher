@@ -215,7 +215,15 @@ function App() {
 
         {/* Resume */}
         <div className="card">
-          <h3>Resume<h5>(.pdf)</h5></h3>
+          <h3>Resume <h5>(.pdf)</h5>
+            <span className="info-icon">
+              ℹ️
+              <span className="tooltip">
+                Upload your resume in PDF or paste text. 
+                Include skills, projects, and experience.
+              </span>
+            </span>
+          </h3>
 
           <div className="file-upload">
             <label className="upload-btn">
@@ -250,7 +258,15 @@ function App() {
 
         {/* JD */}
         <div className="card">
-          <h3>Job Description<h5>(.pdf)</h5></h3>
+          <h3>Job Description <h5>(.pdf)</h5>
+            <span className="info-icon">
+              ℹ️
+              <span className="tooltip">
+                Paste a detailed job description. 
+                Mention required skills like AWS, Python, etc.
+              </span>
+            </span>
+          </h3>
 
           <div className="file-upload">
             <label className="upload-btn">
