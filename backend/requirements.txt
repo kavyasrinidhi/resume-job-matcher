@@ -5,4 +5,5 @@ requests
 PyPDF2
 gunicorn
 rapidfuzz
-sentence-transformers
+scikit-learn
+numpy

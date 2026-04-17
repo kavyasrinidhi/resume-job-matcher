@@ -1,26 +1,12 @@
-from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
-import streamlit as st
-
-
-@st.cache_resource
-def load_model():
-    return SentenceTransformer("all-MiniLM-L6-v2")
 
 
 def compute_ai_similarity(resume_text, jd_text):
+    vectorizer = TfidfVectorizer(stop_words='english')
 
-    model = load_model()
+    vectors = vectorizer.fit_transform([resume_text, jd_text])
 
-    resume_sentences = resume_text.split(".")
-    jd_sentences = jd_text.split(".")
+    similarity = cosine_similarity(vectors[0], vectors[1])[0][0]
 
-    resume_emb = model.encode(resume_sentences)
-    jd_emb = model.encode(jd_sentences)
-
-    similarity_matrix = cosine_similarity(resume_emb, jd_emb)
-
-    score = np.mean(similarity_matrix)
-
-    return score * 100
+    return similarity * 100
