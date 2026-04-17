@@ -1,11 +1,14 @@
 # 📄 AI Resume Analyzer & Job Matcher
-🌐 **Live Demo:** https://resume-job-matcher-alpha.vercel.app/
+🌐 Live Demo: https://resume-job-matcher-alpha.vercel.app/
+
 ---
-⚙️ **Backend API:** https://resume-job-matcher-rajx.onrender.com
+⚙️ Backend API: https://resume-job-matcher-rajx.onrender.com
+
 ---
 ## 📌 Description:
 A full-stack AI-powered web application that analyzes resumes against job descriptions and provides intelligent matching scores, skill insights, and job recommendations.
 The system combines text analytics, intelligent scoring, and similarity algorithms to help users optimize their resumes for specific roles.
+
 ---
 ## 🚀 Features:
 * 📊 **Resume Analysis** – Upload resume (PDF/Text) and compare with job description
@@ -99,6 +102,7 @@ REACT_APP_API_URL=https://resume-job-matcher-rajx.onrender.com
 ---
 ## 🏷️ Summary:
 A full-stack AI Resume Analyzer that evaluates resumes against job descriptions, provides actionable insights, and recommends jobs using intelligent scoring and text similarity techniques.
+
 ---
 ## 💼 Resume Highlight:
 Developed and deployed a full-stack AI Resume Analyzer using React and Flask, enabling real-time resume evaluation, skill gap analysis, and job recommendations with optimized cloud deployment.
